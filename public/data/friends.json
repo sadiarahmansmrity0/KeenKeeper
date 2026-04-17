@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Emma Wilson",
+    "picture": "https://images.unsplash.com/photo-1494790108755-2616d56a84f7?w=150&h=150&fit=crop",
+    "email": "emma.wilson@example.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["family", "mentor"],
+    "bio": "Former colleague, great mentor. We worked together at TechCorp for 3 years.",
+    "goal": 30,
+    "next_due_date": "2026-02-27"
+  },
+  {
+    "id": 2,
+    "name": "David Kim",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+    "email": "david.kim@example.com",
+    "days_since_contact": 16,
+    "status": "almost due",
+    "tags": ["work", "project partner"],
+    "bio": "Current project collaborator. We're building an AI startup together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
+    "email": "lisa.n@example.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["work", "design"],
+    "bio": "UX designer I collaborated with on multiple projects. Incredible eye for detail.",
+    "goal": 14,
+    "next_due_date": "2025-06-15"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop",
+    "email": "james.wright@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["happy travel", "adventure"],
+    "bio": "Travel buddy from our Southeast Asia trip. Always planning the next adventure.",
+    "goal": 60,
+    "next_due_date": "2025-08-10"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Chen",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop",
+    "email": "sarah.chen@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["college", "best friend"],
+    "bio": "Roommate from university. We've known each other for over a decade.",
+    "goal": 7,
+    "next_due_date": "2025-07-05"
+  },
+  {
+    "id": 6,
+    "name": "Marcus Johnson",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop",
+    "email": "marcus.j@example.com",
+    "days_since_contact": 28,
+    "status": "overdue",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym partner and accountability buddy. Keeps me motivated to stay fit.",
+    "goal": 7,
+    "next_due_date": "2025-06-01"
+  }
+]
