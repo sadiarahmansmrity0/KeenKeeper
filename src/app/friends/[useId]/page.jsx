@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Zoom } from 'react-toastify';
 import { addToLocalDB } from "@/utils/localDB";
 import { getAllFromLocalDB } from "@/utils/localDB";
-
+import { HiOutlineTrash } from "react-icons/hi";
 const FriendsData = ({ params }) => {
   const {loading, friends } = useHooks();
   const { useId } = use(params);
@@ -93,8 +93,9 @@ const sharedStyle = " text-white rounded-full px-3 py-1 text-sm font-medium";
                 <span>📁</span> Archive
               </button>
               <button className="w-full flex items-center gap-3 px-5 py-3.5 text-sm text-red-500 hover:bg-red-50 transition-colors">
-                <span>🗑️</span> Delete
-              </button>
+  <HiOutlineTrash className="text-lg" /> 
+  Delete
+</button>
             </div>
           </div>
 
