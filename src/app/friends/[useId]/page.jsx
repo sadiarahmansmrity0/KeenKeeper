@@ -133,7 +133,7 @@ const sharedStyle = " text-white rounded-full px-3 py-1 text-sm font-medium";
 
             {/* Quick Check-In */}
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <h3 className="text-sm font-semibold text-slate-700 mb-3">Quick Check-In</h3>
+              <h3 className="text-sm font-semibold text-slate-500 mb-3">Quick Check-In</h3>
               <div className="grid grid-cols-3 gap-3">
                 {[
                   { label: "Call", icon: "📞" },
