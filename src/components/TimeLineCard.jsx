@@ -1,22 +1,32 @@
-
+"use client";
 import { InterectionsContext } from '@/context/installcontext';
 import React, { useContext, useEffect, useState } from 'react';
 
 const TimeLineCard = ({ sortType, search }) => {
     const { interections } = useContext(InterectionsContext);
-    const [filteredList, setFilteredList] = useState(interections);
-    console.log(search);
+    
+    // 1. Initialize with an empty array to avoid server/client mismatch
+    const [filteredList, setFilteredList] = useState([]);
+    
+    // 2. Track mounting to prevent hydration errors
+    const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setIsMounted(true);
+}, []);
 
     useEffect(() => {
+        
         let updatedList = [...interections];
 
-
+        // Search Filter Logic
         if (search) {
             updatedList = updatedList.filter((item) =>
                 item.with.toLowerCase().includes(search.toLowerCase())
             );
         }
 
+        // Sorting & Type Filter Logic
         if (sortType === "Date") {
             updatedList = updatedList.sort(
                 (a, b) => new Date(b.date) - new Date(a.date)
@@ -33,38 +43,54 @@ const TimeLineCard = ({ sortType, search }) => {
 
     }, [sortType, interections, search]);
 
+    // Don't render anything on the server to ensure perfect hydration
+    if (!isMounted) {
+        return null; 
+    }
 
     return (
-        <>
-
+        <div className="w-full">
             {filteredList.length > 0 ? (
                 <div className="flex flex-col w-full gap-4 my-8">
                     {filteredList.map((interection, index) => (
-                        <div className="px-3 py-10 rounded-lg shadow flex items-start bg-white" key={interection.id || index}>
-                            <div className="flex items-center gap-1">
-                                <div>
+                        <div 
+                            className="px-6 py-8 rounded-lg shadow-sm flex items-center justify-between bg-white border border-gray-100" 
+                            key={interection.id || index}
+                        >
+                            <div className="flex items-center gap-4">
+                                <div className="p-3 bg-gray-50 rounded-full text-2xl">
                                     {interection.icon}
                                 </div>
                                 <div>
-                                    <h1 className="flex justify-center items-center gap-2"><span className="text-success text-lg font-semibold">{interection.type}</span>with{interection.with}</h1>
-                                    <p>{interection.date}</p>
+                                    <h1 className="text-lg font-medium text-gray-800">
+                                        <span className="text-success font-bold capitalize">
+                                            {interection.type}
+                                        </span> 
+                                        {" "}with {interection.with}
+                                    </h1>
+                                    <p className="text-sm text-gray-400">
+                                        {new Date(interection.date).toLocaleDateString('en-GB', {
+                                            day: 'numeric',
+                                            month: 'short',
+                                            year: 'numeric'
+                                        })}
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
             ) : (
-                <div className="flex flex-col items-center justify-center w-full gap-4 my-8 py-10 px-6 rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100 shadow-sm">
-                    <div className="text-5xl opacity-70">💬</div>
-                    <h1 className="text-2xl font-semibold text-gray-800">No Interactions</h1>
+                /* Empty State */
+                <div className="flex flex-col items-center justify-center w-full gap-4 my-8 py-16 px-6 rounded-2xl border border-dashed border-gray-300 bg-gray-50/50">
+                    <div className="text-6xl grayscale opacity-50">empty</div>
+                    <h1 className="text-2xl font-semibold text-gray-700">No Interactions Found</h1>
                     <p className="text-sm text-gray-500 text-center max-w-xs">
-                        You haven’t had any interactions yet. Start engaging to see activity here.
+                        Try adjusting your filters or start a new conversation with a friend to fill your timeline.
                     </p>
                 </div>
-            )
-            }
-
-        </>
+            )}
+        </div>
     );
 };
 
