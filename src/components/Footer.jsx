@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
  const socialLinks = [
     { icon: <img src="/instagram.png" alt="" />, href: "https://instagram.com", label: "Instagram" },
     { icon: <img src="/facebook.png" alt=""  />, href: "https://facebook.com", label: "Facebook" },
@@ -16,7 +17,9 @@ const Footer = () => {
         <div>
             <footer  className="text-black w-full btn-dark-success">
       <div className="max-w-5xl mx-auto px-6 py-16 flex flex-col items-center text-center gap-6">
-        <h2 className="text-4xl font-bold tracking-tight">KeenKeeper</h2>
+        <h2 className="text-4xl font-bold tracking-tight">
+          Keen<span className="text-success">Keeper</span>
+        </h2>
 
         <p className="   text-sm max-w-md leading-relaxed" >
           Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
@@ -50,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}>
+      <div style={{ borderTop: "1px solid rgba(255,255,255,0.1) border-t border-white/10 bg-black/20" }}>
         <div className="max-w-5xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
           <span>© 2026 KeenKeeper. All rights reserved.</span>
           <div className="flex items-center gap-4">
