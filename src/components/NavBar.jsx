@@ -24,7 +24,9 @@ const NavBar = () => {
                             <li ><Link className={path == "/stats" ? "btn btn-success" : "btn btn-block"} href='/stats'>Stats</Link></li>
                         </ul>
                     </div>
-                    <Link href='/' className="btn btn-ghost normal-case text-xl text-black">Keen <span className="text-success">Keeper</span></Link>
+                    <Link href="/" className="text-2xl font-bold tracking-tight text-gray-800 hover:opacity-90 transition-opacity">
+                    Keen<span className="text-success">Keeper</span>
+                </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-2">
