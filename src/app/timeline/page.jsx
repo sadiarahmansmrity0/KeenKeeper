@@ -26,11 +26,11 @@ const handleSearch = (e) => {
         <>
             <div className="bg-[#F8FAFC]">
                 <section className="flex flex-col justify-center items-start w-8/12 mx-auto w-8/12 " >
-                    <h1 className="my-4 text-5xl font-bold">TimeLine</h1>
+                    <h1 className="my-4 text-black text-5xl font-bold">Timeline</h1>
                     <div className="flex justify-between items-center w-full">
                         <div className="dropdown dropdown-start my-4">
-                            <div tabIndex={0} role="button" className="btn m-1 ">Filter TimeLine <FaLongArrowAltRight /> {sortType} <MdArrowDropDown /></div>
-                            <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                            <div tabIndex={0} role="button" className="btn m-1 text-gray-600">Filter TimeLine <FaLongArrowAltRight /> {sortType} <MdArrowDropDown /></div>
+                            <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 text-gray-500 shadow-sm">
                                 <li><a onClick={()=>{setSortingType("All")}}>All</a></li>
                                 <li><a onClick={()=>{setSortingType("Date")}}>Date</a></li>
                                 <li><a onClick={()=>{setSortingType("Call")}}>Call</a></li>
@@ -40,7 +40,7 @@ const handleSearch = (e) => {
                             </ul>
                         </div>
                         <div>
-                            <label className="input">
+                            <label className="input text-gray-600">
                                 <MdManageSearch />
                                 <input onChange={handleSearch} type="search" required placeholder="Search" />
                             </label>
