@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Anjum Tabassum",
+    "picture": "https://i.pravatar.cc/150?img=26",
+    "email": "anjum.anta@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["University", "Bestie"],
+    "bio": "CSE student at Metropolitan University. Loves building UI with Tailwind.",
+    "goal": 7,
+    "next_due_date": "2026-05-15"
+  },
+  {
+    "id": 2,
+    "name": "Tabassum Zaman",
+    "picture": "https://i.pravatar.cc/150?img=09",
+    "email": "tabassum.z@outlook.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["Work", "Design"],
+    "bio": "Expert in Figma and UX research. We usually meet for coffee weekends.",
+    "goal": 10,
+    "next_due_date": "2026-05-01"
+  },
+  {
+    "id": 3,
+    "name": "Sunna Jahan",
+    "picture": "https://i.pravatar.cc/150?img=10",
+    "email": "sunna.j@yahoo.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": ["School", "Childhood"],
+    "bio": "Childhood friend. We share an interest in Korean skincare and movies.",
+    "goal": 7,
+    "next_due_date": "2026-05-12"
+  },
+  {
+    "id": 4,
+    "name": "Ariful Islam",
+    "picture": "https://i.pravatar.cc/150?img=13",
+    "email": "arif.cse@mu.ac.bd",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["University", "Lab Mate"],
+    "bio": "Brilliant at Operating Systems and C programming. Project partner.",
+    "goal": 14,
+    "next_due_date": "2026-05-22"
+  },
+  {
+    "id": 5,
+    "name": "Sadia Smrity",
+    "picture": "https://i.pravatar.cc/150?img=47",
+    "email": "sadia.rahman@mu.ac.bd",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["Close Friend", "Travel"],
+    "bio": "Travel enthusiast. We are planning a trip to Sajek valley soon.",
+    "goal": 7,
+    "next_due_date": "2026-05-05"
+  },
+  {
+    "id": 6,
+    "name": "Tanvir Ahmed",
+    "picture": "https://i.pravatar.cc/150?img=59",
+    "email": "tanvir.dev@gmail.com",
+    "days_since_contact": 4,
+    "status": "almost due",
+    "tags": ["Coding", "React"],
+    "bio": "Full-stack developer. Helps me with React Context and API debugging.",
+    "goal": 5,
+    "next_due_date": "2026-05-13"
+  },
+  {
+    "id": 7,
+    "name": "Marcus Thorne",
+    "picture": "https://i.pravatar.cc/150?img=58",
+    "email": "m.thorne@creative.io",
+    "days_since_contact": 120,
+    "status": "overdue",
+    "tags": [
+      "professional",
+      "networking"
+    ],
+    "bio": "UX Designer I met at a conference. Good industry contact.",
+    "goal": 90,
+    "next_due_date": "2025-03-30"
+  },
+  {
+    "id": 8,
+    "name": "Chloe Bennett",
+    "picture": "https://i.pravatar.cc/150?img=57",
+    "email": "chloe.b@lifestyle.com",
+    "days_since_contact": 2,
+    "status": "active",
+    "tags": [
+      "close friend",
+      "travel"
+    ],
+    "bio": "Travel buddy. Planning a trip to Japan next year.",
+    "goal": 7,
+    "next_due_date": "2025-05-17"
+  },
+  {
+    "id": 9,
+    "name": "Sam Rivera",
+    "picture": "https://i.pravatar.cc/150?img=67",
+    "email": "sam.rivera@talk.com",
+    "days_since_contact": 55,
+    "status": "active",
+    "tags": [
+      "family",
+      "cousin"
+    ],
+    "bio": "Favorite cousin. We try to catch up every few months.",
+    "goal": 90,
+    "next_due_date": "2025-06-20"
+  },
+  {
+    "id": 10,
+    "name": "James O'Connor",
+    "picture": "https://i.pravatar.cc/150?img=51",
+    "email": "james.oc@ireland.ie",
+    "days_since_contact": 8,
+    "status": "active",
+    "tags": [
+      "hobby",
+      "gaming"
+    ],
+    "bio": "Met through an online RPG. Plays every weekend.",
+    "goal": 10,
+    "next_due_date": "2025-05-22"
+  }
+]
