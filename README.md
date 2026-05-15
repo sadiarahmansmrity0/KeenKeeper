@@ -35,10 +35,10 @@
 Run locally:
 
 ```bash
-git clone <https://github.com/sadiarahmansmrity0/KeenKeeper.git>
+git clone <[your-repo-url](https://github.com/sadiarahmansmrity0/KeenKeeper.git)>
 cd friends-keeper
 npm install
 npm run dev
 ```
 🧑‍💻 Author
-Sadia Rahman Smrity Computer Science & Engineering Student Metropolitan University, Sylhet
+Sadia Rahman Smrity, Computer Science & Engineering Student - Metropolitan University, Sylhet
